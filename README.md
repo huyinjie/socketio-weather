@@ -61,3 +61,13 @@ Long Polling New
 * Being full duplex, the client can send data to the server, and the server can send data to the client simultaneously without any http requests. 
 * Since websockets are much lighter weight, the server is able to handle significantly more websocket connections than http connections.
 * The downside is that it is not fully supported across all popular borwsers, as IE 8.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+### SocketIO
+
+* Socket.IO is a JavaScript library for realtime web applications. It enables realtime, bi-directional communication between web clients and servers.
+* io.on method listens to any clientside connection. when client loads the req with SocketIO, a new connection is established
+* Then, it will emit a message to every available socket
+
+* good for real time data
+* static data needs to be emitted only once. Whereas, dynamic data needs to be emitted on each mutatation.
